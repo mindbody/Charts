@@ -69,7 +69,7 @@ struct AxisRendererCustomInterval {
                 first -= interval
             }
 
-            let last = interval == 0.0 ? 0.0 : (floor(yMax / interval) * interval).nextUp
+            let last = interval == 0.0 ? 0.0 : (floor((yMax + yMax.truncatingRemainder(dividingBy: interval)) / interval) * interval).nextUp
 
             if interval != 0.0 && last != first
             {
