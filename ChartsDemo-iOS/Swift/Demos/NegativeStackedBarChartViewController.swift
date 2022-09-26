@@ -105,7 +105,7 @@ class NegativeStackedBarChartViewController: DemoBaseViewController {
                      BarChartDataEntry(x: 105, yValues: [-1, 2])
         ]
         
-        let set = BarChartDataSet(entries: yVals, label: "Age Distribution")
+        let set = BarChartDataSet(entries: yVals, label: "Age Distribution", xAxisAccessibilityLabel: (0 ..< yVals.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yVals.count).map { "Y-axis-\($0)" })
         set.drawIconsEnabled = false
         set.valueFormatter = DefaultValueFormatter(formatter: customFormatter)
         set.valueFont = .systemFont(ofSize: 7)

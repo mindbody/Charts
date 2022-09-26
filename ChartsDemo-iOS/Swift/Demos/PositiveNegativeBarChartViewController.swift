@@ -95,7 +95,7 @@ class PositiveNegativeBarChartViewController: DemoBaseViewController {
             return entry.y > 0 ? red : green
         }
         
-        let set = BarChartDataSet(entries: yVals, label: "Values")
+        let set = BarChartDataSet(entries: yVals, label: "Values", xAxisAccessibilityLabel: (0 ..< yVals.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yVals.count).map { "Y-axis-\($0)" })
         set.colors = colors
         set.valueColors = colors
         

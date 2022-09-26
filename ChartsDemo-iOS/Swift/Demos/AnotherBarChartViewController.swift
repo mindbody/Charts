@@ -76,7 +76,7 @@ class AnotherBarChartViewController: DemoBaseViewController {
             chartView.data?.notifyDataChanged()
             chartView.notifyDataSetChanged()
         } else {
-            set1 = BarChartDataSet(entries: yVals, label: "Data Set")
+            set1 = BarChartDataSet(entries: yVals, label: "Data Set", xAxisAccessibilityLabel: (0 ..< yVals.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yVals.count).map { "Y-axis-\($0)" })
             set1.colors = ChartColorTemplates.vordiplom()
             set1.drawValuesEnabled = false
             

@@ -29,11 +29,11 @@ open class BarDemoViewController: NSViewController
         let yse2 = ys2.enumerated().map { x, y in return BarChartDataEntry(x: Double(x), y: y) }
         
         let data = BarChartData()
-        let ds1 = BarChartDataSet(entries: yse1, label: "Hello")
+        let ds1 = BarChartDataSet(entries: yse1, label: "Hello", xAxisAccessibilityLabel: (0 ..< yse1.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yse1.count).map { "Y-axis-\($0)" })
         ds1.colors = [NSUIColor.red]
         data.append(ds1)
 
-        let ds2 = BarChartDataSet(entries: yse2, label: "World")
+        let ds2 = BarChartDataSet(entries: yse2, label: "World", xAxisAccessibilityLabel: (0 ..< yse2.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yse2.count).map { "Y-axis-\($0)" })
         ds2.colors = [NSUIColor.blue]
         data.append(ds2)
 

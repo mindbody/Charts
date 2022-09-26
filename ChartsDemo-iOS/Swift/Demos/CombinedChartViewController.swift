@@ -156,13 +156,13 @@ class CombinedChartViewController: DemoBaseViewController {
             return BarChartDataEntry(x: 0, yValues: [Double(arc4random_uniform(13) + 12), Double(arc4random_uniform(13) + 12)])
         }
         
-        let set1 = BarChartDataSet(entries: entries1, label: "Bar 1")
+        let set1 = BarChartDataSet(entries: entries1, label: "Bar 1", xAxisAccessibilityLabel: (0 ..< entries1.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries1.count).map { "Y-axis-\($0)" })
         set1.setColor(UIColor(red: 60/255, green: 220/255, blue: 78/255, alpha: 1))
         set1.valueTextColor = UIColor(red: 60/255, green: 220/255, blue: 78/255, alpha: 1)
         set1.valueFont = .systemFont(ofSize: 10)
         set1.axisDependency = .left
         
-        let set2 = BarChartDataSet(entries: entries2, label: "")
+        let set2 = BarChartDataSet(entries: entries2, label: "", xAxisAccessibilityLabel: (0 ..< entries2.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries2.count).map { "Y-axis-\($0)" })
         set2.stackLabels = ["Stack 1", "Stack 2"]
         set2.colors = [UIColor(red: 61/255, green: 165/255, blue: 255/255, alpha: 1),
                        UIColor(red: 23/255, green: 197/255, blue: 255/255, alpha: 1)

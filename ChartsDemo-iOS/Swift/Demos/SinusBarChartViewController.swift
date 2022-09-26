@@ -88,7 +88,7 @@ class SinusBarChartViewController: DemoBaseViewController {
             BarChartDataEntry(x: Double($0), y: sin(.pi * Double($0%128) / 64))
         }
         
-        let set = BarChartDataSet(entries: entries, label: "Sinus Function")
+        let set = BarChartDataSet(entries: entries, label: "Sinus Function", xAxisAccessibilityLabel: (0 ..< entries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries.count).map { "Y-axis-\($0)" })
         set.setColor(UIColor(red: 240/255, green: 120/255, blue: 123/255, alpha: 1))
         
         let data = BarChartData(dataSet: set)
