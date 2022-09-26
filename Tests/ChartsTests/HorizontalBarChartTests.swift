@@ -49,14 +49,14 @@ class HorizontalBarChartTests: XCTestCase {
     }
 
     func setupDefaultDataSet(chartDataEntries: [ChartDataEntry]) -> BarChartDataSet {
-        let dataSet = BarChartDataSet(entries: chartDataEntries, label: "Bar chart unit test data")
+        let dataSet = BarChartDataSet(entries: chartDataEntries, label: "Bar chart unit test data", xAxisAccessibilityLabel: (0 ..< chartDataEntries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< chartDataEntries.count).map { "Y-axis-\($0)" })
         dataSet.drawIconsEnabled = false
         dataSet.iconsOffset = CGPoint(x: 0, y: -10.0)
         return dataSet
     }
 
     func setupDefaultStackedDataSet(chartDataEntries: [ChartDataEntry]) -> BarChartDataSet {
-        let dataSet = BarChartDataSet(entries: chartDataEntries, label: "Stacked bar chart unit test data")
+        let dataSet = BarChartDataSet(entries: chartDataEntries, label: "Stacked bar chart unit test data", xAxisAccessibilityLabel: (0 ..< chartDataEntries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< chartDataEntries.count).map { "Y-axis-\($0)" })
         dataSet.drawIconsEnabled = false
         dataSet.iconsOffset = CGPoint(x: 0, y: -10.0)
         dataSet.colors = Array(arrayLiteral: NSUIColor(red: 46 / 255.0, green: 204 / 255.0, blue: 113 / 255.0, alpha: 1.0),

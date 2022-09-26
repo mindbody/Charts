@@ -42,7 +42,7 @@ class CombinedChartTests: XCTestCase {
             entries.append(BarChartDataEntry(x: Double(i), y: value, icon: UIImage(named: "icon", in: Bundle(for: classForCoder), compatibleWith: nil)))
         }
 
-        barDataSet = BarChartDataSet(entries: entries, label: "Bar chart unit test data")
+        barDataSet = BarChartDataSet(entries: entries, label: "Bar chart unit test data", xAxisAccessibilityLabel: (0 ..< entries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries.count).map { "Y-axis-\($0)" })
         barDataSet.drawIconsEnabled = false
 
         let data = BarChartData(dataSet: barDataSet)
@@ -61,7 +61,7 @@ class CombinedChartTests: XCTestCase {
             entries.append(ChartDataEntry(x: Double(i), y: value, icon: UIImage(named: "icon", in: Bundle(for: classForCoder), compatibleWith: nil)))
         }
 
-        lineDataSet = LineChartDataSet(entries: entries, label: "Line chart unit test data")
+        lineDataSet = LineChartDataSet(entries: entries, label: "Line chart unit test data", xAxisAccessibilityLabel: (0 ..< entries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries.count).map { "Y-axis-\($0)" })
         lineDataSet.drawIconsEnabled = false
         return LineChartData(dataSet: lineDataSet)
     }

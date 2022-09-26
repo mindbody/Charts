@@ -25,7 +25,7 @@ class LineChartTests: XCTestCase {
             entries.append(ChartDataEntry(x: Double(i), y: value, icon: icon))
         }
 
-        dataSet = LineChartDataSet(entries: entries, label: "First unit test data")
+        dataSet = LineChartDataSet(entries: entries, label: "First unit test data", xAxisAccessibilityLabel: (0 ..< entries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries.count).map { "Y-axis-\($0)" })
         dataSet.drawIconsEnabled = false
         dataSet.iconsOffset = CGPoint(x: 0, y: 20.0)
 
