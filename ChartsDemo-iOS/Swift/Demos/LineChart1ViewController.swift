@@ -114,7 +114,7 @@ class LineChart1ViewController: DemoBaseViewController {
             return ChartDataEntry(x: Double(i), y: val, icon: #imageLiteral(resourceName: "icon"))
         }
 
-        let set1 = LineChartDataSet(entries: values, label: "DataSet 1")
+        let set1 = LineChartDataSet(entries: values, label: "DataSet 1", xAxisAccessibilityLabel: (0 ..< values.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< values.count).map { "Y-axis-\($0)" })
         set1.drawIconsEnabled = false
         setup(set1)
 

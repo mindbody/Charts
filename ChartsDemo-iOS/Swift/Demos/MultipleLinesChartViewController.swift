@@ -80,7 +80,7 @@ class MultipleLinesChartViewController: DemoBaseViewController {
         }
         let dataSets = (0..<3).map { i -> LineChartDataSet in
             let yVals = (0..<count).map(block)
-            let set = LineChartDataSet(entries: yVals, label: "DataSet \(i)")
+            let set = LineChartDataSet(entries: yVals, label: "DataSet \(i)", xAxisAccessibilityLabel: (0 ..< yVals.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yVals.count).map { "Y-axis-\($0)" })
             set.lineWidth = 2.5
             set.circleRadius = 4
             set.circleHoleRadius = 2

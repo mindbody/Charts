@@ -132,7 +132,7 @@ class CustomLineChartViewController: DemoBaseViewController {
         values.append(ChartDataEntry(x: 9, y: 30))
         values.append(ChartDataEntry(x: 10, y: 140))
         
-        let set1 = LineChartDataSet(entries: values, label: "DataSet 1")
+        let set1 = LineChartDataSet(entries: values, label: "DataSet 1", xAxisAccessibilityLabel: (0 ..< values.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< values.count).map { "Y-axis-\($0)" })
         set1.drawIconsEnabled = false
         let circleColors = values.map { value -> UIColor in
             switch value.y {

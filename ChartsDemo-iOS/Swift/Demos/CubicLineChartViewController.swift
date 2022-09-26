@@ -91,7 +91,7 @@ class CubicLineChartViewController: DemoBaseViewController {
             return ChartDataEntry(x: Double(i), y: val)
         }
 
-        let set1 = LineChartDataSet(entries: yVals1, label: "DataSet 1")
+        let set1 = LineChartDataSet(entries: yVals1, label: "DataSet 1", xAxisAccessibilityLabel: (0 ..< yVals1.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< yVals1.count).map { "Y-axis-\($0)" })
         set1.mode = .cubicBezier
         set1.drawCirclesEnabled = false
         set1.lineWidth = 1.8

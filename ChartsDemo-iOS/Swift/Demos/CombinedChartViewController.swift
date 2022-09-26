@@ -131,7 +131,7 @@ class CombinedChartViewController: DemoBaseViewController {
             return ChartDataEntry(x: Double(i) + 0.5, y: Double(arc4random_uniform(15) + 5))
         }
         
-        let set = LineChartDataSet(entries: entries, label: "Line DataSet")
+        let set = LineChartDataSet(entries: entries, label: "Line DataSet", xAxisAccessibilityLabel: (0 ..< entries.count).map { "X-axis-\($0)" }, yAxisAccessibilityLabel: (0 ..< entries.count).map { "Y-axis-\($0)" })
         set.setColor(UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1))
         set.lineWidth = 2.5
         set.setCircleColor(UIColor(red: 240/255, green: 238/255, blue: 70/255, alpha: 1))
