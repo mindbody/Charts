@@ -124,7 +124,7 @@
     }
     else
     {
-        set = [[BarChartDataSet alloc] initWithEntries:entries label:@"Sinus Function"];
+        set = [[BarChartDataSet alloc] initWithEntries:entries label:@"Sinus Function" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         [set setColor:[UIColor colorWithRed:240/255.f green:120/255.f blue:124/255.f alpha:1.f]];
         
         BarChartData *data = [[BarChartData alloc] initWithDataSet:set];

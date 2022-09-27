@@ -149,7 +149,7 @@
         }
     }
     
-    BarChartDataSet *set = set = [[BarChartDataSet alloc] initWithEntries:values label:@"Values"];
+    BarChartDataSet *set = set = [[BarChartDataSet alloc] initWithEntries:values label:@"Values" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
     set.colors = colors;
     set.valueColors = colors;
     

@@ -151,7 +151,7 @@
     }
     else
     {
-        set1 = [[LineChartDataSet alloc] initWithEntries:values label:@"DataSet 1"];
+        set1 = [[LineChartDataSet alloc] initWithEntries:values label:@"DataSet 1" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         
         set1.drawIconsEnabled = NO;
         

@@ -154,7 +154,7 @@
     }
     else
     {
-        set1 = [[LineChartDataSet alloc] initWithEntries:yVals1 label:@"DataSet 1"];
+        set1 = [[LineChartDataSet alloc] initWithEntries:yVals1 label:@"DataSet 1" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         set1.axisDependency = AxisDependencyLeft;
         [set1 setColor:[UIColor colorWithRed:51/255.f green:181/255.f blue:229/255.f alpha:1.f]];
         [set1 setCircleColor:UIColor.whiteColor];
@@ -165,7 +165,7 @@
         set1.highlightColor = [UIColor colorWithRed:244/255.f green:117/255.f blue:117/255.f alpha:1.f];
         set1.drawCircleHoleEnabled = NO;
         
-        set2 = [[LineChartDataSet alloc] initWithEntries:yVals2 label:@"DataSet 2"];
+        set2 = [[LineChartDataSet alloc] initWithEntries:yVals2 label:@"DataSet 2" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         set2.axisDependency = AxisDependencyRight;
         [set2 setColor:UIColor.redColor];
         [set2 setCircleColor:UIColor.whiteColor];
@@ -176,7 +176,7 @@
         set2.highlightColor = [UIColor colorWithRed:244/255.f green:117/255.f blue:117/255.f alpha:1.f];
         set2.drawCircleHoleEnabled = NO;
         
-        set3 = [[LineChartDataSet alloc] initWithEntries:yVals3 label:@"DataSet 3"];
+        set3 = [[LineChartDataSet alloc] initWithEntries:yVals3 label:@"DataSet 3" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         set3.axisDependency = AxisDependencyRight;
         [set3 setColor:UIColor.yellowColor];
         [set3 setCircleColor:UIColor.whiteColor];

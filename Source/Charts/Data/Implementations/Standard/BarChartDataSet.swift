@@ -29,6 +29,7 @@ open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, BarChartData
         initialize()
     }
     
+    @objc
     public init(entries: [ChartDataEntry], label: String, xAxisAccessibilityLabel: [String]? = nil, yAxisAccessibilityLabel: [String]? = nil)
     {
         super.init(entries: entries, label: label)

@@ -137,7 +137,7 @@
         customFormatter.minimumSignificantDigits = 1;
         customFormatter.minimumFractionDigits = 1;
         
-        set = [[BarChartDataSet alloc] initWithEntries:yValues label:@"Age Distribution"];
+        set = [[BarChartDataSet alloc] initWithEntries:yValues label:@"Age Distribution" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         
         set.drawIconsEnabled = NO;
         

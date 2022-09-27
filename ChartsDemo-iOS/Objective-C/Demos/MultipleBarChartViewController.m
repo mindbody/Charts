@@ -171,16 +171,16 @@
     }
     else
     {
-        set1 = [[BarChartDataSet alloc] initWithEntries:yVals1 label:@"Company A"];
+        set1 = [[BarChartDataSet alloc] initWithEntries:yVals1 label:@"Company A" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         [set1 setColor:[UIColor colorWithRed:104/255.f green:241/255.f blue:175/255.f alpha:1.f]];
         
-        set2 = [[BarChartDataSet alloc] initWithEntries:yVals2 label:@"Company B"];
+        set2 = [[BarChartDataSet alloc] initWithEntries:yVals2 label:@"Company B" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         [set2 setColor:[UIColor colorWithRed:164/255.f green:228/255.f blue:251/255.f alpha:1.f]];
         
-        set3 = [[BarChartDataSet alloc] initWithEntries:yVals3 label:@"Company C"];
+        set3 = [[BarChartDataSet alloc] initWithEntries:yVals3 label:@"Company C" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         [set3 setColor:[UIColor colorWithRed:242/255.f green:247/255.f blue:158/255.f alpha:1.f]];
         
-        set4 = [[BarChartDataSet alloc] initWithEntries:yVals4 label:@"Company D"];
+        set4 = [[BarChartDataSet alloc] initWithEntries:yVals4 label:@"Company D" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         [set4 setColor:[UIColor colorWithRed:255/255.f green:102/255.f blue:0/255.f alpha:1.f]];
         
         NSMutableArray *dataSets = [[NSMutableArray alloc] init];

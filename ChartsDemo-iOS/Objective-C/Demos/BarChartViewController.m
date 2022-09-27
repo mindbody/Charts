@@ -154,7 +154,7 @@
     }
     else
     {
-        set1 = [[BarChartDataSet alloc] initWithEntries:yVals label:@"The year 2017"];
+        set1 = [[BarChartDataSet alloc] initWithEntries:yVals label:@"The year 2017" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         [set1 setColors:ChartColorTemplates.material];
         set1.drawIconsEnabled = NO;
         
