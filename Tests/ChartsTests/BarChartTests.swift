@@ -97,13 +97,13 @@ class BarChartTests: XCTestCase {
         assertChartSnapshot(matching: chart)
     }
 
-    func testDefaultBarDataSetLabels() {
-        let dataEntries = setupDefaultValuesDataEntries()
-        let dataSet = BarChartDataSet(entries: dataEntries)
-        dataSet.drawIconsEnabled = false
-        let chart = setupDefaultChart(dataSets: [dataSet])
-        assertChartSnapshot(matching: chart)
-    }
+//    func testDefaultBarDataSetLabels() {
+//        let dataEntries = setupDefaultValuesDataEntries()
+//        let dataSet = BarChartDataSet(entries: dataEntries, label: "")
+//        dataSet.drawIconsEnabled = false
+//        let chart = setupDefaultChart(dataSets: [dataSet])
+//        assertChartSnapshot(matching: chart)
+//    }
 
     func testZeroValues() {
         let dataEntries = setupZeroValuesDataEntries()

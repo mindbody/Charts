@@ -112,7 +112,7 @@
     }
     else
     {
-        set1 = [[LineChartDataSet alloc] initWithEntries:yVals1 label:@"DataSet 1"];
+        set1 = [[LineChartDataSet alloc] initWithEntries:yVals1 label:@"DataSet 1" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         set1.axisDependency = AxisDependencyLeft;
         [set1 setColor:[UIColor colorWithRed:255/255.0 green:241/255.0 blue:46/255.0 alpha:1.0]];
         set1.drawCirclesEnabled = NO;
@@ -127,7 +127,7 @@
             return self.chartView.leftAxis.axisMinimum;
         }];
         
-        set2 = [[LineChartDataSet alloc] initWithEntries:yVals2 label:@"DataSet 2"];
+        set2 = [[LineChartDataSet alloc] initWithEntries:yVals2 label:@"DataSet 2" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         set2.axisDependency = AxisDependencyLeft;
         [set2 setColor:[UIColor colorWithRed:255/255.0 green:241/255.0 blue:46/255.0 alpha:1.0]];
         set2.drawCirclesEnabled = NO;

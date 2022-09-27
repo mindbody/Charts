@@ -125,7 +125,7 @@
     }
     else
     {
-        set1 = [[BarChartDataSet alloc] initWithEntries:yVals label:@"Statistics Vienna 2014"];
+        set1 = [[BarChartDataSet alloc] initWithEntries:yVals label:@"Statistics Vienna 2014" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         
         set1.drawIconsEnabled = NO;
         
