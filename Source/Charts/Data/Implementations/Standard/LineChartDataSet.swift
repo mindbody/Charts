@@ -36,9 +36,12 @@ open class LineChartDataSet: LineRadarChartDataSet, LineChartDataSetProtocol
         initialize()
     }
     
-    public override init(entries: [ChartDataEntry], label: String)
+    @objc
+    public init(entries: [ChartDataEntry], label: String, xAxisAccessibilityLabel: [String]? = nil, yAxisAccessibilityLabel: [String]? = nil)
     {
         super.init(entries: entries, label: label)
+        self.xAxisAccessibilityLabel = xAxisAccessibilityLabel
+        self.yAxisAccessibilityLabel = yAxisAccessibilityLabel
         initialize()
     }
     

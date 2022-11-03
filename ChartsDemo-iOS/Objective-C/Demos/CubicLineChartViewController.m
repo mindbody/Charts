@@ -132,7 +132,7 @@
     }
     else
     {
-        set1 = [[LineChartDataSet alloc] initWithEntries:yVals1 label:@"DataSet 1"];
+        set1 = [[LineChartDataSet alloc] initWithEntries:yVals1 label:@"DataSet 1" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         set1.mode = LineChartModeCubicBezier;
         set1.cubicIntensity = 0.2;
         set1.drawCirclesEnabled = NO;

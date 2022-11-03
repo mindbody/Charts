@@ -133,7 +133,7 @@
     }
     else
     {
-        set1 = [[BarChartDataSet alloc] initWithEntries:yVals label:@"DataSet"];
+        set1 = [[BarChartDataSet alloc] initWithEntries:yVals label:@"DataSet" xAxisAccessibilityLabel:nil yAxisAccessibilityLabel:nil];
         
         set1.drawIconsEnabled = NO;
         
